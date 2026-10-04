@@ -25,12 +25,22 @@
                         <i class="bi bi-person-plus-fill me-1"></i> Tambah Pengguna
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 rounded-2 transition-all {{ request()->is('matakuliah') ? 'active fw-semibold text-white bg-white bg-opacity-10' : 'text-light text-opacity-75' }}" href="{{ url('/matakuliah') }}">
+                        <i class="bi bi-journal-text me-1"></i> Daftar Mata Kuliah
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 rounded-2 transition-all {{ request()->is('matakuliah/create') ? 'active fw-semibold text-white bg-white bg-opacity-10' : 'text-light text-opacity-75' }}" href="{{ route('matakuliah.create') }}">
+                        <i class="bi bi-journal-plus me-1"></i> Tambah Mata Kuliah
+                    </a>
+                </li>
             </ul>
 
             <div class="d-flex align-items-center gap-3">
                 <span class="badge rounded-pill bg-light bg-opacity-10 text-light px-3 py-2 border border-light border-opacity-10 d-none d-md-inline-flex align-items-center gap-2">
                     <i class="bi bi-code-slash text-info"></i>
-                    <span>Modul 4: Controller & View</span>
+                    <span>Modul 5: CRUD (Create & Read)</span>
                 </span>
                 <div class="d-flex align-items-center gap-2 border-start border-secondary ps-3 ms-1">
                     <div class="avatar-badge d-inline-flex align-items-center justify-content-center rounded-circle text-white fw-bold shadow-sm" style="width: 38px; height: 38px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); font-size: 0.85rem;">
